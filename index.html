@@ -5,11 +5,83 @@
     <title>Poppy Playtime — полный сайт</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
+<body>
+    <audio id="clickSound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"></audio>
     <h1>Poppy Playtime</h1>
+<button onclick="showSection('story')">📖 Сюжет</button>
+<button onclick="showSection('characters')">👹 Персонажи</button>
+<div id="about" style="display: none">
 
-    <button onclick="showSection('story')">📖 Сюжет</button>
-    <button onclick="showSection('characters')">👹 Персонажи</button>
+  <div class="block">
+    <h2>Суть игры</h2>
+    <p>
+      Poppy Playtime — это хоррор-игра, где ты исследуешь заброшенную фабрику Playtime Co.
+      Главная суть — выжить, решать головоломки и не попасться живым игрушкам.
+    </p>
+    <p>
+      Игрок использует GrabPack (перчатки), чтобы открывать двери, включать механизмы
+      и убегать от монстров.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>Правила</h2>
+    <p>• Не попадаться монстрам</p>
+    <p>• Решать головоломки</p>
+    <p>• Быстро реагировать</p>
+    <p>• Изучать фабрику</p>
+  </div>
+
+  <div class="block">
+    <h2>Цель</h2>
+    <p>
+      Узнать, что случилось на фабрике, раскрыть тайну экспериментов
+      и выжить среди опасных игрушек.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>Глава 1</h2>
+    <p>
+      Ты приходишь на фабрику и сталкиваешься с Хагги Вагги.
+      Учишься играть и убегаешь от него.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>Глава 2</h2>
+    <p>
+      Мами Лонг Легс заставляет тебя проходить испытания.
+      Ты начинаешь понимать, что происходит что-то страшное.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>Глава 3</h2>
+    <p>
+      Фабрика становится ещё страшнее. Появляется Кетнап и другие монстры.
+      Атмосфера становится более тёмной.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>Глава 4</h2>
+    <p>
+      Ты встречаешь Пионо Завра, Ярнаби и других существ.
+      Узнаёшь больше про эксперименты.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>Глава 5</h2>
+    <p>
+      Появляется Прототип — главный монстр.
+      Он управляет другими игрушками и представляет главную угрозу.
+    </p>
+  </div>
+
+</div>
+<button onclick="showSection('about')">🎮 Суть игры</button>
 
     <!-- СЮЖЕТ -->
     <div id="story">
