@@ -88,3 +88,31 @@ body {
 #chat p {
   margin: 5px 0;
 }
+#aiToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00a046;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.ai-box {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border: 2px solid #00a046;
+  border-radius: 10px;
+  padding: 10px;
+  display: none; /* ВАЖНО */
+  z-index: 999;
+}

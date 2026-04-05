@@ -11,6 +11,15 @@ function showSection(id) {
     document.getElementById("about").style.display = "none";
 
     document.getElementById(id).style.display = "block";
+    function showSection(id) {
+  const sections = ["story", "characters", "about", "video"];
+
+  sections.forEach(sec => {
+    document.getElementById(sec).style.display = "none";
+  });
+
+  document.getElementById(id).style.display = "block";
+}
 }
 function showSection(sectionId) {
   let sections = ["story", "characters", "about"];
@@ -54,3 +63,18 @@ function getAIResponse(text) {
 
   return "Я не нашёл это на сайте 😢 Попробуй спросить иначе";
 }
+const toggleBtn = document.getElementById("aiToggle");
+const aiBox = document.getElementById("aiAssistant");
+const sound = document.getElementById("clickSound");
+
+toggleBtn.onclick = () => {
+  if (aiBox.style.display === "none" || aiBox.style.display === "") {
+    aiBox.style.display = "block";
+  } else {
+    aiBox.style.display = "none";
+  }
+
+  // звук клика
+  sound.currentTime = 0;
+  sound.play();
+};
